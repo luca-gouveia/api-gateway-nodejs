@@ -22,7 +22,7 @@ app.post('/api/country', (req, res) => {
     res.send({status: 'ok', country: req.body.name})
 })
 
-var porta = process.env.PORT || 8080;
+var porta = process.env.PORT || 8000;
 app.listen(porta, function() {
   console.log('Server is running at localhost:'+porta);
 });
